@@ -2,10 +2,10 @@ import { BigNumber, Contract, ethers, providers, utils } from "ethers";
 import Head from "next/head";
 import React, { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
-import { abi, RANDOM_GAME_NFT_CONTRACT_ADDRESS } from "../constants";
-import { FETCH_CREATED_GAME } from "../queries";
+import { abi, RANDOM_GAME_NFT_CONTRACT_ADDRESS } from "../../constants";
+import { FETCH_CREATED_GAME } from "../../queries";
 import styles from "../styles/Home.module.css";
-import { subgraphQuery } from "../utils";
+import { subgraphQuery } from "../../utils";
 
 export default function Home() {
   const zero = BigNumber.from("0");
